@@ -9,6 +9,8 @@
 .services_heading h1{
     margin: 2rem 0;
     font-size: 30px;
+    color: var(--color-text);
+
 }
 .services_cards{
     display: flex;

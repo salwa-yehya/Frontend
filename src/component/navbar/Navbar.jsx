@@ -10,7 +10,7 @@ const Menu = () => (
       <a href="#home">Home</a>
     </p>
     <p>
-      <a href="#wgpt3">services</a>
+      <a href="#services">services</a>
     </p>
     
   </>
@@ -28,7 +28,7 @@ const Navbar = () => {
           <Menu />
         </div>
       <div className="navbar-sign">
-        <Button txt='sign in'/>
+        <Button txt='Become a tasker'/>
       </div>
       {/* menu for mobile  */}
       <div className="navbar-menu">
@@ -51,7 +51,7 @@ const Navbar = () => {
               <Menu />
             </div>
             <div className="navbar-menu_container-links-sign">
-            <Button txt='sign in'/>
+            <Button txt='Become a tasker'/>
             </div>
           </div>
         )}

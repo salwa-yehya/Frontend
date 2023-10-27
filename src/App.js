@@ -1,10 +1,10 @@
 
 import './App.css';
-// import Brand from './component/Brand/Brand';
-import Navbar from './component/navbar/Navbar';
-import Header from './containers/header/Header';
-import Section from './containers/section/Section';
-import Services from './containers/services/Services';
+import { Navbar} from "./component";
+import { Header , Section , Services ,Cta, Footer} from "./containers";
+import image1 from "./assets/Untitled design.svg";
+import image2 from "./assets/section.jpeg";
+
 
 function App() {
   return (
@@ -13,7 +13,10 @@ function App() {
       <Header/>
       {/* <Brand/> */}
       <Services/>
-      <Section/>
+      <Section imgsrc={image1} imagePosition='right'/>
+      <Cta/>
+      <Section imgsrc={image2} imagePosition='left'/>
+      <Footer/>
     </div>
   );
 }

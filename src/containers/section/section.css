@@ -1,48 +1,124 @@
-.section{
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+  position: relative;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1;
+ 
+}
+li::before{
+  content: '\e90b';
+  position: absolute; 
+  padding-right: 1rem;
+}
+
+.section {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.section_content{
-  flex-basis: 50%;
-  padding: 0 9%;
+
+.section_content {
+  flex: 1;
+  padding: 0 6%;
   display: flex;
   flex-direction: column;
- justify-content: center;
- align-items: flex-start;
- text-align: left;
-
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
 
 }
-.section_content h2{
-  font-size: 35px;
+
+.section_content h2 {
+  font-size: 30px;
   line-height: 39px;
   margin-bottom: 1rem;
+  color: var(--color-text);
+
 }
-.section_content p{
-  font-size: 1.2rem;
-  line-height: 19px;
+
+.section_content p {
+  font-size: 1.1rem;
+  line-height: 25px;
   font-weight: 400;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    display: block;
-    position: relative;
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    line-height: 1;
 
-}
-
-.section_image{
-  flex :1 ;
-
-}
-.section_image img{
+.section-img-right {
+  flex: 1;
   width: 100%;
   border-radius: 0;
+}
+.section-img-left {
+  flex: 1;
+  width: 100%;
+  border-radius: 0;
+  order: -1; /* Change the order to move the image to the left */
+
+}
+@media screen and (min-width : 801px) and (max-width : 1024px){
+  .section_content {
+   width: 100%;
+    padding: 2% 4%;
+
+  
+  }
+  .section-img-right ,
+  .section-img-left{
+   width: 50%;
+  }
+ 
+}
+@media screen and (max-width : 800px){
+  .section {
+    flex-direction: column;
+  }
+  .section_content {
+    padding: 6% 5%;
+  }
+  .section_content h2 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .section_content p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  li {
+    font-size: .9rem;
+    line-height: 1;
+   
+  }
+  .section-img-right ,
+  .section-img-left {
+    width: 100%;
+    height: auto;
+   }
+}
+@media screen and (max-width : 425px){
+  .section_content {
+    padding: 7% 5%;
+  }
+  .section_content h2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .section_content p {
+    font-size: .85rem;
+    line-height: 15px;
+  }
+  li {
+    font-size: .7rem;
+    line-height: 1;
+   
+  }
+  li::before{
+    padding-right: .6rem;
+  }
+  
 }

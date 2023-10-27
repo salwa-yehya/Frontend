@@ -6,7 +6,7 @@ const Project = () => {
     
     <div className='project__card '>
       
-        <img src={moving} alt='project img' />
+        <img className='img' src={moving} alt='project img' />
         
         <div className="card__container">
             <h4>Help Moving</h4>

@@ -6,9 +6,10 @@
     transition: 0.3s;
     border-radius: 0 0 6px 6px;
     margin-right: 1.5rem;
+    cursor: pointer;
 }
 
-img {
+.img {
     max-width: 100%;
     border-radius: 6px 6px 0 0;
 
@@ -52,7 +53,7 @@ img {
         margin-right: 0;
     }
 
-    img {
+    .img {
         max-width: 200px;
         border-radius: 6px 0 0 6px;
     }
@@ -71,7 +72,7 @@ img {
 
 
 @media screen and (max-width : 425px) {
-    img {
+    .img {
         max-width: 50%;
     }
 }
